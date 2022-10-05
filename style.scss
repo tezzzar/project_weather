@@ -1,11 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@400;500;600;700&display=swap");
+
 * {
   box-sizing: border-box;
 }
 .container {
-  padding: 25px;
+  font-family: "Noto Sans Mono";
   color: #fff;
   width: 800px;
   height: 450px;
   margin: 150px auto;
   background-color: #0b5c9a;
+
+  border-radius: 15px;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+[class*="row-"] {
+  padding: 25px;
+  display: flex;
+  height: 100%;
+  width: 50%;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.row-2 {
+  font-size: 25px;
+  padding-top: 0;
+  justify-content: flex-start;
+  text-align: center;
+  &:nth-child(1) {
+    height: 50%;
+  }
+}
+
+.h1 {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.icon {
+  img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+.description {
+  padding-top: 30px;
+  font-weight: 600;
+  font-size: 35px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 35px;
 }
