@@ -23,7 +23,7 @@
 
 let apiKey = "ca1549cfb7910eb3e2baca706acee596";
 let city = "Kyiv";
-let url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&lang=ru&units=metric&appid=${apiKey}`;
+let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&lang=ru&units=metric&appid=${apiKey}`;
 
 var today = new Date();
 var options = {
